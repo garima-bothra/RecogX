@@ -43,12 +43,12 @@ extension AppDelegate: GIDSignInDelegate{
 
 
             // Access the storyboard and fetch an instance of the view controller
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil);
-//            let viewController: UserFormVC = storyboard.instantiateViewController(withIdentifier: "UserFormVC") as! UserFormVC
+            let storyboard = UIStoryboard(name: "Main", bundle: nil);
+            let viewController: UserFormViewController = storyboard.instantiateViewController(withIdentifier: "form") as! UserFormViewController
 
             // Then push that view controller onto the navigation stack
-//            let rootViewController = self.window!.rootViewController
-//            rootViewController?.show(viewController, sender: true)
+            let rootViewController = self.window!.rootViewController
+            rootViewController?.show(viewController, sender: true)
             // Haptic feedback when logged in
             UIDevice.validVibrate()
         }
