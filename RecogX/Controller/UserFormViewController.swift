@@ -22,6 +22,8 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         dropDown.delegate = self
         dropDown.dataSource = self
         self.dropDown.isHidden = true
+        self.mailTextField.text = getEmail()
+        self.mailTextField.isEnabled = false
         self.navigationController?.navigationBar.topItem?.title = "About You"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
@@ -63,6 +65,12 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
 
+     func setParams() -> [String:Any]?{
+        var param : [String:Any]
+        param = ["name": nameTextfield.text, "phone": callTextField.text, "mail": mailTextField.text, "gender": genderTextField.text]
+        return param
+    }
+
     @IBAction func saveButtonPressed(_ sender: Any) {
         if nameTextfield.text == "" {
             dismissAlert(titlepass: "No Name", message: "Please enter your name")
@@ -77,9 +85,22 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 dismissAlert(titlepass: "No phone number", message: "Please enter your phone number")
                 return
             }
+        if genderTextField.text == "" {
+                   dismissAlert(titlepass: "Select Gender", message: "Please select 'Not specified' if you do not wish to specify!")
+                   return
+               }
         let storyboard = UIStoryboard(name: "Main", bundle: nil);
         let tabController: UITabBarController = storyboard.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
-        self.present(tabController, animated: true, completion: nil)
+        if let params = setParams(){
+            firebaseNetworking.shared.fillUserForm(param: params) { (result) in
+                if result {
+                    print("User data has been saved ")
+                    self.present(tabController, animated: true, completion: nil)
+                }else{
+                    self.authAlert(titlepass: "Sorry", message: "Please Try again")
+                }
+            }
+        }
         }
 
 

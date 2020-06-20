@@ -24,6 +24,9 @@
 		86C4148A249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41489249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift */; };
 		86C4148C249E2AB600CC3EF1 /* FAQBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */; };
 		86C4148E249E379D00CC3EF1 /* String+isValidPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4148D249E379D00CC3EF1 /* String+isValidPhone.swift */; };
+		86C41490249E3B7B00CC3EF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4148F249E3B7B00CC3EF1 /* User.swift */; };
+		86C41492249E3BE800CC3EF1 /* FirebaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41491249E3BE800CC3EF1 /* FirebaseNetworking.swift */; };
+		86C41495249E3CAD00CC3EF1 /* getFirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41494249E3CAD00CC3EF1 /* getFirebaseUser.swift */; };
 		FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		86C41489249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+instantiate.swift"; sourceTree = "<group>"; };
 		86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQBotViewController.swift; sourceTree = "<group>"; };
 		86C4148D249E379D00CC3EF1 /* String+isValidPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isValidPhone.swift"; sourceTree = "<group>"; };
+		86C4148F249E3B7B00CC3EF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		86C41491249E3BE800CC3EF1 /* FirebaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworking.swift; sourceTree = "<group>"; };
+		86C41494249E3CAD00CC3EF1 /* getFirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getFirebaseUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 		86C41472249DFEC800CC3EF1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86C4148F249E3B7B00CC3EF1 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				86C41480249E024100CC3EF1 /* debugger.swift */,
+				86C41494249E3CAD00CC3EF1 /* getFirebaseUser.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 		86C41484249E032100CC3EF1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				86C41491249E3BE800CC3EF1 /* FirebaseNetworking.swift */,
 				86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */,
 			);
 			path = Networking;
@@ -322,14 +331,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C41495249E3CAD00CC3EF1 /* getFirebaseUser.swift in Sources */,
 				86C41483249E026A00CC3EF1 /* ViewController+Alert.swift in Sources */,
 				86C4148C249E2AB600CC3EF1 /* FAQBotViewController.swift in Sources */,
 				86C41460249DFE6400CC3EF1 /* ViewController.swift in Sources */,
 				86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */,
 				86C41477249E00D400CC3EF1 /* checkNetwork.swift in Sources */,
 				86C4145C249DFE6400CC3EF1 /* AppDelegate.swift in Sources */,
+				86C41490249E3B7B00CC3EF1 /* User.swift in Sources */,
 				86C4147C249E019B00CC3EF1 /* Feedback+haptic.swift in Sources */,
 				86C4148E249E379D00CC3EF1 /* String+isValidPhone.swift in Sources */,
+				86C41492249E3BE800CC3EF1 /* FirebaseNetworking.swift in Sources */,
 				86C4147E249E01D700CC3EF1 /* Keyboard+hide.swift in Sources */,
 				86C4147A249E013E00CC3EF1 /* Reachability.swift in Sources */,
 				86C4148A249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift in Sources */,
