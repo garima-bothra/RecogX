@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,21 @@
 		86C41463249DFE6400CC3EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C41461249DFE6400CC3EF1 /* Main.storyboard */; };
 		86C41465249DFE6800CC3EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C41464249DFE6800CC3EF1 /* Assets.xcassets */; };
 		86C41468249DFE6800CC3EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C41466249DFE6800CC3EF1 /* LaunchScreen.storyboard */; };
+		86C41474249DFF7200CC3EF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86C41473249DFF7200CC3EF1 /* GoogleService-Info.plist */; };
+		86C41477249E00D400CC3EF1 /* checkNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41476249E00D400CC3EF1 /* checkNetwork.swift */; };
+		86C4147A249E013E00CC3EF1 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41479249E013E00CC3EF1 /* Reachability.swift */; };
+		86C4147C249E019B00CC3EF1 /* Feedback+haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4147B249E019B00CC3EF1 /* Feedback+haptic.swift */; };
+		86C4147E249E01D700CC3EF1 /* Keyboard+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4147D249E01D700CC3EF1 /* Keyboard+hide.swift */; };
+		86C41481249E024100CC3EF1 /* debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41480249E024100CC3EF1 /* debugger.swift */; };
+		86C41483249E026A00CC3EF1 /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41482249E026A00CC3EF1 /* ViewController+Alert.swift */; };
+		86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */; };
+		FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ACD9832548D3C978BDE71FB /* Pods-RecogX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecogX.debug.xcconfig"; path = "Target Support Files/Pods-RecogX/Pods-RecogX.debug.xcconfig"; sourceTree = "<group>"; };
+		1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecogX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DCDC9BB15D81B6ECEAE440 /* Pods-RecogX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecogX.release.xcconfig"; path = "Target Support Files/Pods-RecogX/Pods-RecogX.release.xcconfig"; sourceTree = "<group>"; };
 		86C41458249DFE6400CC3EF1 /* RecogX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecogX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C4145B249DFE6400CC3EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86C4145D249DFE6400CC3EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,14 @@
 		86C41464249DFE6800CC3EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C41467249DFE6800CC3EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C41469249DFE6800CC3EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C41473249DFF7200CC3EF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86C41476249E00D400CC3EF1 /* checkNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkNetwork.swift; sourceTree = "<group>"; };
+		86C41479249E013E00CC3EF1 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		86C4147B249E019B00CC3EF1 /* Feedback+haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feedback+haptic.swift"; sourceTree = "<group>"; };
+		86C4147D249E01D700CC3EF1 /* Keyboard+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+hide.swift"; sourceTree = "<group>"; };
+		86C41480249E024100CC3EF1 /* debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debugger.swift; sourceTree = "<group>"; };
+		86C41482249E026A00CC3EF1 /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
+		86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+GSignIn.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4221A7D87E50029940CACC30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ACD9832548D3C978BDE71FB /* Pods-RecogX.debug.xcconfig */,
+				43DCDC9BB15D81B6ECEAE440 /* Pods-RecogX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7EBF47481309E207DE846A98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86C4144F249DFE6300CC3EF1 = {
 			isa = PBXGroup;
 			children = (
 				86C4145A249DFE6400CC3EF1 /* RecogX */,
 				86C41459249DFE6400CC3EF1 /* Products */,
+				4221A7D87E50029940CACC30 /* Pods */,
+				7EBF47481309E207DE846A98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +96,16 @@
 		86C4145A249DFE6400CC3EF1 /* RecogX */ = {
 			isa = PBXGroup;
 			children = (
+				86C41484249E032100CC3EF1 /* Networking */,
+				86C4147F249E022600CC3EF1 /* Constants */,
+				86C41478249E012400CC3EF1 /* Utilities */,
+				86C41475249E00B500CC3EF1 /* Extensions */,
 				86C41472249DFEC800CC3EF1 /* Model */,
 				86C41470249DFEAE00CC3EF1 /* View */,
 				86C41471249DFEB600CC3EF1 /* Controller */,
 				86C4146F249DFE8000CC3EF1 /* Helper */,
 				86C41464249DFE6800CC3EF1 /* Assets.xcassets */,
+				86C41473249DFF7200CC3EF1 /* GoogleService-Info.plist */,
 				86C41469249DFE6800CC3EF1 /* Info.plist */,
 			);
 			path = RecogX;
@@ -99,6 +144,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		86C41475249E00B500CC3EF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86C41476249E00D400CC3EF1 /* checkNetwork.swift */,
+				86C41482249E026A00CC3EF1 /* ViewController+Alert.swift */,
+				86C4147B249E019B00CC3EF1 /* Feedback+haptic.swift */,
+				86C4147D249E01D700CC3EF1 /* Keyboard+hide.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86C41478249E012400CC3EF1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				86C41479249E013E00CC3EF1 /* Reachability.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		86C4147F249E022600CC3EF1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				86C41480249E024100CC3EF1 /* debugger.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		86C41484249E032100CC3EF1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86C4146C249DFE6800CC3EF1 /* Build configuration list for PBXNativeTarget "RecogX" */;
 			buildPhases = (
+				A74BE676210AF84264E8B17E /* [CP] Check Pods Manifest.lock */,
 				86C41454249DFE6300CC3EF1 /* Sources */,
 				86C41455249DFE6300CC3EF1 /* Frameworks */,
 				86C41456249DFE6300CC3EF1 /* Resources */,
+				1B88005071F08E2EC72B1B99 /* [CP] Embed Pods Frameworks */,
+				8405CCC5668B3C3F2B69A310 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C41468249DFE6800CC3EF1 /* LaunchScreen.storyboard in Resources */,
+				86C41474249DFF7200CC3EF1 /* GoogleService-Info.plist in Resources */,
 				86C41465249DFE6800CC3EF1 /* Assets.xcassets in Resources */,
 				86C41463249DFE6400CC3EF1 /* Main.storyboard in Resources */,
 			);
@@ -165,13 +249,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B88005071F08E2EC72B1B99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecogX/Pods-RecogX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecogX/Pods-RecogX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecogX/Pods-RecogX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8405CCC5668B3C3F2B69A310 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecogX/Pods-RecogX-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecogX/Pods-RecogX-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecogX/Pods-RecogX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74BE676210AF84264E8B17E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecogX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86C41454249DFE6300CC3EF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C41483249E026A00CC3EF1 /* ViewController+Alert.swift in Sources */,
 				86C41460249DFE6400CC3EF1 /* ViewController.swift in Sources */,
+				86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */,
+				86C41477249E00D400CC3EF1 /* checkNetwork.swift in Sources */,
 				86C4145C249DFE6400CC3EF1 /* AppDelegate.swift in Sources */,
+				86C4147C249E019B00CC3EF1 /* Feedback+haptic.swift in Sources */,
+				86C4147E249E01D700CC3EF1 /* Keyboard+hide.swift in Sources */,
+				86C4147A249E013E00CC3EF1 /* Reachability.swift in Sources */,
+				86C41481249E024100CC3EF1 /* debugger.swift in Sources */,
 				86C4145E249DFE6400CC3EF1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +464,7 @@
 		};
 		86C4146D249DFE6800CC3EF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ACD9832548D3C978BDE71FB /* Pods-RecogX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +483,7 @@
 		};
 		86C4146E249DFE6800CC3EF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43DCDC9BB15D81B6ECEAE440 /* Pods-RecogX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

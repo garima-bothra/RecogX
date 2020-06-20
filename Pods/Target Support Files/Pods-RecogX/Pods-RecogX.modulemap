@@ -1,0 +1,6 @@
+framework module Pods_RecogX {
+  umbrella header "Pods-RecogX-umbrella.h"
+
+  export *
+  module * { export * }
+}
