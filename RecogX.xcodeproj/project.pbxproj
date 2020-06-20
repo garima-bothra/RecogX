@@ -30,6 +30,7 @@
 		86C41497249E461600CC3EF1 /* KommunicateNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41496249E461600CC3EF1 /* KommunicateNetworking.swift */; };
 		86C41499249E47A600CC3EF1 /* User+Kommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41498249E47A600CC3EF1 /* User+Kommunication.swift */; };
 		86C4149E249E88D700CC3EF1 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4149D249E88D700CC3EF1 /* ResumeViewController.swift */; };
+		86C414A0249EA81200CC3EF1 /* CommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4149F249EA81200CC3EF1 /* CommunitiesViewController.swift */; };
 		FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		86C41496249E461600CC3EF1 /* KommunicateNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KommunicateNetworking.swift; sourceTree = "<group>"; };
 		86C41498249E47A600CC3EF1 /* User+Kommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Kommunication.swift"; sourceTree = "<group>"; };
 		86C4149D249E88D700CC3EF1 /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
+		86C4149F249EA81200CC3EF1 /* CommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				86C41487249E1A0500CC3EF1 /* UserFormViewController.swift */,
 				86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */,
 				86C4149D249E88D700CC3EF1 /* ResumeViewController.swift */,
+				86C4149F249EA81200CC3EF1 /* CommunitiesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				86C4149E249E88D700CC3EF1 /* ResumeViewController.swift in Sources */,
 				86C41499249E47A600CC3EF1 /* User+Kommunication.swift in Sources */,
 				86C41460249DFE6400CC3EF1 /* ViewController.swift in Sources */,
+				86C414A0249EA81200CC3EF1 /* CommunitiesViewController.swift in Sources */,
 				86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */,
 				86C41477249E00D400CC3EF1 /* checkNetwork.swift in Sources */,
 				86C4145C249DFE6400CC3EF1 /* AppDelegate.swift in Sources */,
