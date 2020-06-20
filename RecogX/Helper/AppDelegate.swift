@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Kommunicate.setup(applicationId: kommunication.AppID)
         //Setting up initial view controller
         setInitialViewController()
+//        Thread.sleep(forTimeInterval: 3)
         return true
     }
 

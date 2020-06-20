@@ -307,6 +307,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="recogX" width="166" height="166"/>
+        <image name="recogX" width="166.5" height="166.5"/>
     </resources>
 </document>
