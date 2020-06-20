@@ -22,8 +22,8 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         dropDown.delegate = self
         dropDown.dataSource = self
         self.dropDown.isHidden = true
-        self.navigationItem.title = "About You"
-        self.navigationItem.largeTitleDisplayMode = .always
+        self.navigationController?.navigationBar.topItem?.title = "About You"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
     }
 
@@ -62,6 +62,26 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             textField.endEditing(true)
         }
     }
+
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        if nameTextfield.text == "" {
+            dismissAlert(titlepass: "No Name", message: "Please enter your name")
+            return
+        }
+        if callTextField.text != "" {
+            let phone = callTextField.text!
+            if !phone.isValidPhone {
+                dismissAlert(titlepass: "Invalid Number", message: "Please enter a valid phone number")
+            }
+        }else {
+                dismissAlert(titlepass: "No phone number", message: "Please enter your phone number")
+                return
+            }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let tabController: UITabBarController = storyboard.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+        self.present(tabController, animated: true, completion: nil)
+        }
+
 
     /*
     // MARK: - Navigation
