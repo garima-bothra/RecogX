@@ -22,6 +22,7 @@
 		86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */; };
 		86C41488249E1A0500CC3EF1 /* UserFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41487249E1A0500CC3EF1 /* UserFormViewController.swift */; };
 		86C4148A249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41489249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift */; };
+		86C4148C249E2AB600CC3EF1 /* FAQBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */; };
 		FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+GSignIn.swift"; sourceTree = "<group>"; };
 		86C41487249E1A0500CC3EF1 /* UserFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormViewController.swift; sourceTree = "<group>"; };
 		86C41489249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+instantiate.swift"; sourceTree = "<group>"; };
+		86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQBotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				86C4145F249DFE6400CC3EF1 /* ViewController.swift */,
 				86C41487249E1A0500CC3EF1 /* UserFormViewController.swift */,
+				86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C41483249E026A00CC3EF1 /* ViewController+Alert.swift in Sources */,
+				86C4148C249E2AB600CC3EF1 /* FAQBotViewController.swift in Sources */,
 				86C41460249DFE6400CC3EF1 /* ViewController.swift in Sources */,
 				86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */,
 				86C41477249E00D400CC3EF1 /* checkNetwork.swift in Sources */,
