@@ -18,6 +18,7 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         genderTextField.delegate = self
         dropDown.delegate = self
         dropDown.dataSource = self
@@ -67,6 +68,10 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
      func setParams() -> [String:Any]?{
         var param : [String:Any]
+        appUser.name =  nameTextfield.text!
+        appUser.phone = callTextField.text!
+        appUser.mail = mailTextField.text!
+        appUser.gender = genderTextField.text!
         param = ["name": nameTextfield.text, "phone": callTextField.text, "mail": mailTextField.text, "gender": genderTextField.text]
         return param
     }

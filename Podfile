@@ -7,9 +7,11 @@ target 'RecogX' do
 
   # Pods for RecogX
 pod 'Firebase/Analytics'
+pod 'Kommunicate'
 pod 'SwiftyJSON'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'GoogleSignIn'
+pod 'Firebase/Storage'
 
 end

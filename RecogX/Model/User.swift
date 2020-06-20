@@ -10,7 +10,7 @@ import Foundation
 
 struct User {
     var name: String
-    let mail: String
-    var phone: Int
+    var mail: String
+    var phone: String
     var gender: String?
 }

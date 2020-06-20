@@ -84,19 +84,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLA-w1-FWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763.7681159420292" y="92.410714285714278"/>
+            <point key="canvasLocation" x="1603" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--Resume View Controller-->
         <scene sceneID="06r-pt-vLq">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cLQ-mj-zbZ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cLQ-mj-zbZ" customClass="ResumeViewController" customModule="RecogX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VjD-UN-HPN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.97668810149999996" green="0.97668810149999996" blue="0.97668810149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="fNL-th-4j2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="i84-AP-e5g"/>
+                    <navigationItem key="navigationItem" id="i84-AP-e5g">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="h0b-7j-xVl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UeZ-Zb-vuh">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="+ Resume"/>
+                                <connections>
+                                    <action selector="resumeButtonPressed:" destination="cLQ-mj-zbZ" eventType="touchUpInside" id="nDR-Lk-xRA"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEw-5b-Lj8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,11 +116,11 @@
         <!--Bot View Controller-->
         <scene sceneID="o2Z-aL-g0B">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8O9-CC-LFm" customClass="FAQBotViewController" customModule="RecogX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bot" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8O9-CC-LFm" customClass="FAQBotViewController" customModule="RecogX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NEz-EN-f9e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.97668810149999996" green="0.97668810149999996" blue="0.97668810149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="FYj-Ix-gKr"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ur9-77-dRe"/>
@@ -135,7 +146,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCX-us-9We" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2521.739130434783" y="88.392857142857139"/>
+            <point key="canvasLocation" x="2820" y="92"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -199,7 +210,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99d-lO-NdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="92"/>
+            <point key="canvasLocation" x="874" y="92"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="yO9-oG-vS4">
@@ -218,7 +229,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSc-Xy-CKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3444.9275362318845" y="-235.04464285714283"/>
+            <point key="canvasLocation" x="3581" y="-235"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="nM7-4A-Mgt">
@@ -237,7 +248,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psc-2Q-NnZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3444.9275362318845" y="412.5"/>
+            <point key="canvasLocation" x="3613" y="413"/>
         </scene>
     </scenes>
 </document>

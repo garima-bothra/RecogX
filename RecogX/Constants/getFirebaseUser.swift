@@ -9,6 +9,9 @@
 import Foundation
 import Firebase
 
+//MARK: - User
+var appUser = User(name: "", mail: "", phone: "")
+
 //MARK: -  function to get uid
 internal func getUID() -> String {
     let uid = Auth.auth().currentUser?.uid

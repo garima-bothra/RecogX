@@ -27,6 +27,9 @@
 		86C41490249E3B7B00CC3EF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4148F249E3B7B00CC3EF1 /* User.swift */; };
 		86C41492249E3BE800CC3EF1 /* FirebaseNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41491249E3BE800CC3EF1 /* FirebaseNetworking.swift */; };
 		86C41495249E3CAD00CC3EF1 /* getFirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41494249E3CAD00CC3EF1 /* getFirebaseUser.swift */; };
+		86C41497249E461600CC3EF1 /* KommunicateNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41496249E461600CC3EF1 /* KommunicateNetworking.swift */; };
+		86C41499249E47A600CC3EF1 /* User+Kommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C41498249E47A600CC3EF1 /* User+Kommunication.swift */; };
+		86C4149E249E88D700CC3EF1 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4149D249E88D700CC3EF1 /* ResumeViewController.swift */; };
 		FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		86C4148F249E3B7B00CC3EF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		86C41491249E3BE800CC3EF1 /* FirebaseNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworking.swift; sourceTree = "<group>"; };
 		86C41494249E3CAD00CC3EF1 /* getFirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getFirebaseUser.swift; sourceTree = "<group>"; };
+		86C41496249E461600CC3EF1 /* KommunicateNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KommunicateNetworking.swift; sourceTree = "<group>"; };
+		86C41498249E47A600CC3EF1 /* User+Kommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Kommunication.swift"; sourceTree = "<group>"; };
+		86C4149D249E88D700CC3EF1 /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,7 @@
 				86C4145F249DFE6400CC3EF1 /* ViewController.swift */,
 				86C41487249E1A0500CC3EF1 /* UserFormViewController.swift */,
 				86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */,
+				86C4149D249E88D700CC3EF1 /* ResumeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 			children = (
 				86C41480249E024100CC3EF1 /* debugger.swift */,
 				86C41494249E3CAD00CC3EF1 /* getFirebaseUser.swift */,
+				86C41498249E47A600CC3EF1 /* User+Kommunication.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				86C41491249E3BE800CC3EF1 /* FirebaseNetworking.swift */,
+				86C41496249E461600CC3EF1 /* KommunicateNetworking.swift */,
 				86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */,
 			);
 			path = Networking;
@@ -334,6 +343,8 @@
 				86C41495249E3CAD00CC3EF1 /* getFirebaseUser.swift in Sources */,
 				86C41483249E026A00CC3EF1 /* ViewController+Alert.swift in Sources */,
 				86C4148C249E2AB600CC3EF1 /* FAQBotViewController.swift in Sources */,
+				86C4149E249E88D700CC3EF1 /* ResumeViewController.swift in Sources */,
+				86C41499249E47A600CC3EF1 /* User+Kommunication.swift in Sources */,
 				86C41460249DFE6400CC3EF1 /* ViewController.swift in Sources */,
 				86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */,
 				86C41477249E00D400CC3EF1 /* checkNetwork.swift in Sources */,
@@ -341,6 +352,7 @@
 				86C41490249E3B7B00CC3EF1 /* User.swift in Sources */,
 				86C4147C249E019B00CC3EF1 /* Feedback+haptic.swift in Sources */,
 				86C4148E249E379D00CC3EF1 /* String+isValidPhone.swift in Sources */,
+				86C41497249E461600CC3EF1 /* KommunicateNetworking.swift in Sources */,
 				86C41492249E3BE800CC3EF1 /* FirebaseNetworking.swift in Sources */,
 				86C4147E249E01D700CC3EF1 /* Keyboard+hide.swift in Sources */,
 				86C4147A249E013E00CC3EF1 /* Reachability.swift in Sources */,

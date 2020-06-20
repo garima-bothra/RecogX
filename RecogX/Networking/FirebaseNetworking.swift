@@ -9,12 +9,15 @@
 import Foundation
 import Firebase
 import SwiftyJSON
+import FirebaseStorage
 
 class firebaseNetworking {
 
     //MARK: - variables
     static let shared = firebaseNetworking()
     let database = Database.database().reference()
+    static let storage = Storage.storage()
+    let storageRef = storage.reference()
     let myUID = getUID()
 
 // Initializing class
@@ -53,4 +56,29 @@ deinit {
                }
            }
        }
+
+    //MARK: - Upload file to storage
+    public func uploadFile(fileURL: URL, completion: @escaping (Bool) -> ()) {
+    let riversRef = storageRef.child("resume/\(getUID()).pdf")
+
+    // Upload the file to the path "images/rivers.jpg"
+    let uploadTask = riversRef.putFile(from: fileURL, metadata: nil) { metadata, error in
+      guard let metadata = metadata else {
+        // Uh-oh, an error occurred!
+        debugPrint("ERROR WITH METADATA")
+        completion(false)
+        return
+      }
+      // Metadata contains file metadata such as size, content-type.
+      let size = metadata.size
+        completion(true)
+      // You can also access to download URL after upload.
+      riversRef.downloadURL { (url, error) in
+        guard let downloadURL = url else {
+          // Uh-oh, an error occurred!
+          return
+        }
+      }
+    }
+    }
 }
