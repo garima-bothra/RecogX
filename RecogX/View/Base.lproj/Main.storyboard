@@ -173,15 +173,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RecogX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyN-sh-oR5">
-                                <rect key="frame" x="111" y="96" width="193" height="75"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qc-w3-rzv">
-                                <rect key="frame" x="62" y="662" width="291" height="55"/>
-                                <color key="backgroundColor" red="0.40149786799999998" green="0.38501282149999999" blue="0.78765853730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="62" y="680" width="291" height="55"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.63137254901960782" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Sign In with Google">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -190,19 +184,43 @@
                                     <action selector="googleSignInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Md-Di-owK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj5-2i-dVf">
+                                <rect key="frame" x="62" y="198" width="174" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Development: Help you make your mark in the tech field" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zf-ei-zAv">
+                                <rect key="frame" x="62" y="261" width="291" height="354"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recogX" translatesAutoresizingMaskIntoConstraints="NO" id="YeV-xJ-xGE">
+                                <rect key="frame" x="61.5" y="37" width="291" height="166"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="8zf-ei-zAv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="04Q-Cb-g6S"/>
+                            <constraint firstItem="8zf-ei-zAv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-15" id="05r-Af-9zp"/>
                             <constraint firstItem="2qc-w3-rzv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="21j-sJ-Of1"/>
-                            <constraint firstItem="2qc-w3-rzv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.52" id="5Tf-nM-hIC"/>
-                            <constraint firstItem="GyN-sh-oR5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ToC-Qz-Dij"/>
+                            <constraint firstItem="2qc-w3-rzv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.56" id="5Tf-nM-hIC"/>
+                            <constraint firstItem="YeV-xJ-xGE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8f7-Mc-IAg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YeV-xJ-xGE" secondAttribute="trailing" constant="61.5" id="Hg5-zk-uSX"/>
+                            <constraint firstItem="8zf-ei-zAv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61.5" id="MsD-NX-YPR"/>
                             <constraint firstItem="2qc-w3-rzv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0613839" id="U30-0s-VDf"/>
                             <constraint firstItem="2qc-w3-rzv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.702899" id="a3z-nh-RRY"/>
-                            <constraint firstItem="GyN-sh-oR5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.295" id="sbc-5O-fKt"/>
+                            <constraint firstItem="YeV-xJ-xGE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.265" id="ndx-pX-VGl"/>
+                            <constraint firstItem="YeV-xJ-xGE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61.5" id="oL8-df-tog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8zf-ei-zAv" secondAttribute="trailing" constant="61.5" id="oxa-k0-pRW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="googleButton" destination="2qc-w3-rzv" id="s85-mZ-TLv"/>
+                        <outlet property="ourMissionLabel" destination="8zf-ei-zAv" id="neN-Zi-ADQ"/>
                         <segue destination="XKy-nk-Rua" kind="show" id="8XB-Ao-vMe"/>
                     </connections>
                 </viewController>
@@ -287,4 +305,7 @@
             <point key="canvasLocation" x="3611.594202898551" y="809.59821428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="recogX" width="166" height="166"/>
+    </resources>
 </document>
