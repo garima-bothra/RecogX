@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance()?.presentingViewController = self
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func googleSignInButtonPressed(_ sender: Any) {
+        checkNewtork(ifError: "Cannot login")
+        GIDSignIn.sharedInstance().signIn()
+    }
 
 }
 
