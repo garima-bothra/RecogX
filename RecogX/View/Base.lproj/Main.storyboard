@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="drP-2a-RvJ">
-                                <rect key="frame" x="57.5" y="181" width="299" height="588"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="drP-2a-RvJ">
+                                <rect key="frame" x="57.5" y="136.5" width="299" height="548"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kt3-HX-9fo">
                                         <rect key="frame" x="0.0" y="0.0" width="299" height="34"/>
@@ -24,17 +24,17 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbW-dS-T5x">
-                                        <rect key="frame" x="0.0" y="84" width="299" height="34"/>
+                                        <rect key="frame" x="0.0" y="74" width="299" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone No. *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="28e-Mm-xmP">
-                                        <rect key="frame" x="0.0" y="168" width="299" height="34"/>
+                                        <rect key="frame" x="0.0" y="148" width="299" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2HS-Dg-xhb">
-                                        <rect key="frame" x="0.0" y="252" width="299" height="250"/>
+                                        <rect key="frame" x="0.0" y="222" width="299" height="250"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-iU-OQZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="299" height="34"/>
@@ -51,8 +51,8 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-vf-HB8">
-                                        <rect key="frame" x="0.0" y="552" width="299" height="36"/>
-                                        <color key="backgroundColor" red="0.40149786799999998" green="0.38501282149999999" blue="0.78765853730000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="512" width="299" height="36"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="SAVE">
                                             <color key="titleColor" red="0.97668810149999996" green="0.97668810149999996" blue="0.97668810149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -68,7 +68,7 @@
                         <constraints>
                             <constraint firstItem="Oii-4O-uKJ" firstAttribute="trailing" secondItem="drP-2a-RvJ" secondAttribute="trailing" constant="57.5" id="BAx-hx-gzG"/>
                             <constraint firstItem="drP-2a-RvJ" firstAttribute="centerX" secondItem="Oii-4O-uKJ" secondAttribute="centerX" id="EDB-jK-b1k"/>
-                            <constraint firstItem="drP-2a-RvJ" firstAttribute="centerY" secondItem="Oii-4O-uKJ" secondAttribute="centerY" multiplier="1.1" id="lsW-Jw-Oqy"/>
+                            <constraint firstItem="drP-2a-RvJ" firstAttribute="centerY" secondItem="Oii-4O-uKJ" secondAttribute="centerY" multiplier="0.95" id="lsW-Jw-Oqy"/>
                             <constraint firstItem="drP-2a-RvJ" firstAttribute="leading" secondItem="Oii-4O-uKJ" secondAttribute="leading" constant="57.5" id="rPx-ip-xgW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oii-4O-uKJ"/>
@@ -80,6 +80,7 @@
                         <outlet property="genderTextField" destination="DBg-iU-OQZ" id="iA2-PU-wZy"/>
                         <outlet property="mailTextField" destination="EbW-dS-T5x" id="rV0-KT-BCq"/>
                         <outlet property="nameTextfield" destination="kt3-HX-9fo" id="OSN-Na-w0b"/>
+                        <outlet property="saveButton" destination="HKj-vf-HB8" id="0Da-d7-yUv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLA-w1-FWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

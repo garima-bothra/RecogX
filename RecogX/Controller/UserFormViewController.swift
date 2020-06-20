@@ -15,6 +15,7 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var callTextField: UITextField!
     @IBOutlet weak var genderTextField: UITextField!
     @IBOutlet weak var dropDown: UIPickerView!
+    @IBOutlet weak var saveButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class UserFormViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         dropDown.delegate = self
         dropDown.dataSource = self
         self.dropDown.isHidden = true
+        self.saveButton.layer.cornerRadius = 10
         self.mailTextField.text = getEmail()
         self.mailTextField.isEnabled = false
         self.navigationController?.navigationBar.topItem?.title = "About You"
