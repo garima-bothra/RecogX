@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
 var isValidPhone: Bool {
@@ -16,4 +17,11 @@ var isValidPhone: Bool {
     let isValidPhone = phoneTest.evaluate(with: self)
     return isValidPhone
 }
+    func heightNeededForLabel(_ label: UILabel) -> CGFloat {
+    let width = label.frame.size.width
+    guard let font = label.font else {return 0}
+    let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+    let boundingBox = self.boundingRect(with: constraintRect, options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedString.Key.font: font], context: nil)
+    return boundingBox.height
+    }
 }

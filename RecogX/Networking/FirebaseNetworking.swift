@@ -56,6 +56,24 @@ deinit {
                }
            }
        }
+    //MARK: - Function to get Community details
+    public func getCommunities(completion: @escaping (Bool, [Community] ) -> ()) {
+        let communityRef = self.database.child("communities")
+        var communityArr = [Community]()
+        var community = Community(name: "", link: "", bio: "")
+        communityRef.observeSingleEvent(of: .value) { (snapshot) in
+            for child in snapshot.children {
+                community = Community(name: "", link: "", bio: "")
+                let snap = child as! DataSnapshot
+                let communityDict = snap.value as! [String: String]
+                community.name = communityDict["name"]!
+                community.link = communityDict["link"]!
+                community.bio = communityDict["bio"]!
+                communityArr.append(community)
+            }
+            completion(true, communityArr)
+        }
+    }
 
     //MARK: - Upload file to storage
     public func uploadFile(fileURL: URL, completion: @escaping (Bool) -> ()) {
