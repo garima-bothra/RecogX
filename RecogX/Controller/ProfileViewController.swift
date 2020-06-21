@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var aboutUsLabel: UILabel!
 
     fileprivate func getUserData() {
         firebaseNetworking.shared.getUser() { (completion, profile) in
@@ -43,6 +44,8 @@ class ProfileViewController: UIViewController {
         nameLabel.text = "Name: \(userProfile.name)"
         mailLabel.text = "Email: \(userProfile.mail)"
         phoneLabel.text = "Phone: \(userProfile.phone)"
+
+        aboutUsLabel.text = "Made with 💖 by Ananya, Eesha, Garima and Iishi \n\n App Version 1.0"
         logoutButton.layer.cornerRadius = 10
         self.navigationItem.largeTitleDisplayMode = .never
     }

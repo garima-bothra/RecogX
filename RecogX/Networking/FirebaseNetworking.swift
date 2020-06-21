@@ -105,6 +105,9 @@ deinit {
       }
       // Metadata contains file metadata such as size, content-type.
       let size = metadata.size
+        let resumesRef = self.database.child("resumes").child(getUID())
+        resumesRef.child("link").setValue("\(riversRef)")
+        resumesRef.child("uid").setValue(getUID())
         completion(true)
       // You can also access to download URL after upload.
       riversRef.downloadURL { (url, error) in
