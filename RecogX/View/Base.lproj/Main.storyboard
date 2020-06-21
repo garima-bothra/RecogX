@@ -94,25 +94,77 @@
                     <view key="view" contentMode="scaleToFill" id="VjD-UN-HPN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoP-3L-4B4">
+                                <rect key="frame" x="107" y="153" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="W8r-mb-z7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="UPLOAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeButtonPressed:" destination="cLQ-mj-zbZ" eventType="touchUpInside" id="VDJ-lO-m9Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✨ Upload your resume and let us do the magic!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-Jf-RlL">
+                                <rect key="frame" x="20" y="108" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFT-AW-tyl">
+                                <rect key="frame" x="20" y="222" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-p9-eq1">
+                                <rect key="frame" x="0.0" y="232" width="414" height="581"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.97668810149999996" green="0.97668810149999996" blue="0.97668810149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="HFT-AW-tyl" firstAttribute="top" secondItem="zoP-3L-4B4" secondAttribute="bottom" constant="25" id="1hk-Y6-dUG"/>
+                            <constraint firstItem="zoP-3L-4B4" firstAttribute="width" secondItem="VjD-UN-HPN" secondAttribute="width" multiplier="0.483092" id="80H-ke-kea"/>
+                            <constraint firstItem="fNL-th-4j2" firstAttribute="bottom" secondItem="ZyW-p9-eq1" secondAttribute="bottom" id="FKS-f0-UAa"/>
+                            <constraint firstItem="fNL-th-4j2" firstAttribute="trailing" secondItem="VL6-Jf-RlL" secondAttribute="trailing" constant="20" id="JUA-2M-wtX"/>
+                            <constraint firstItem="VL6-Jf-RlL" firstAttribute="leading" secondItem="fNL-th-4j2" secondAttribute="leading" constant="20" id="L1n-2i-pUc"/>
+                            <constraint firstItem="ZyW-p9-eq1" firstAttribute="centerX" secondItem="fNL-th-4j2" secondAttribute="centerX" id="Ocq-MH-v4l"/>
+                            <constraint firstItem="zoP-3L-4B4" firstAttribute="top" secondItem="VL6-Jf-RlL" secondAttribute="bottom" constant="25.5" id="SNv-BN-PNQ"/>
+                            <constraint firstItem="HFT-AW-tyl" firstAttribute="width" secondItem="VjD-UN-HPN" secondAttribute="width" multiplier="0.903382" id="SsA-qI-y7w"/>
+                            <constraint firstItem="VL6-Jf-RlL" firstAttribute="top" secondItem="fNL-th-4j2" secondAttribute="top" constant="20" id="anG-3h-sr0"/>
+                            <constraint firstItem="ZyW-p9-eq1" firstAttribute="width" secondItem="VjD-UN-HPN" secondAttribute="width" id="jjo-ld-pHo"/>
+                            <constraint firstItem="ZyW-p9-eq1" firstAttribute="top" secondItem="HFT-AW-tyl" secondAttribute="bottom" constant="10" id="laW-ut-WgY"/>
+                            <constraint firstItem="zoP-3L-4B4" firstAttribute="centerX" secondItem="fNL-th-4j2" secondAttribute="centerX" id="urT-X6-Pqw"/>
+                            <constraint firstItem="HFT-AW-tyl" firstAttribute="centerX" secondItem="fNL-th-4j2" secondAttribute="centerX" id="vLW-Fd-riJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fNL-th-4j2"/>
                     </view>
                     <navigationItem key="navigationItem" id="i84-AP-e5g">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="h0b-7j-xVl">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UeZ-Zb-vuh">
-                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UeZ-Zb-vuh">
+                                <rect key="frame" x="374" y="11" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+ Resume"/>
+                                <state key="normal" image="person.crop.circle.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="resumeButtonPressed:" destination="cLQ-mj-zbZ" eventType="touchUpInside" id="nDR-Lk-xRA"/>
+                                    <action selector="profileButtonPressed:" destination="cLQ-mj-zbZ" eventType="touchUpInside" id="ggE-uX-pxf"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="profileButton" destination="UeZ-Zb-vuh" id="MwG-dq-prQ"/>
+                        <outlet property="resumeButton" destination="zoP-3L-4B4" id="hzL-LN-Jlq"/>
+                        <outlet property="skillsLabel" destination="HFT-AW-tyl" id="hAf-OW-W0E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEw-5b-Lj8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4374" y="92"/>
+            <point key="canvasLocation" x="4373.913043478261" y="91.741071428571431"/>
         </scene>
         <!--Bot View Controller-->
         <scene sceneID="o2Z-aL-g0B">
@@ -504,6 +556,7 @@
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="recogX" width="166.5" height="166.5"/>
     </resources>
 </document>

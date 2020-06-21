@@ -67,7 +67,7 @@ extension CommunitiesViewController: UITableViewDelegate, UITableViewDataSource 
         let cell: ExploreTableViewCell = self.communityTableView.dequeueReusableCell(withIdentifier: "community") as! ExploreTableViewCell
         cell.accessoryType = .disclosureIndicator
         cell.descriptionLabel.text = communitiesData[indexPath.row].bio.trimmingCharacters(in: CharacterSet.whitespaces)
-        cell.titleLabel.text = communitiesData[indexPath.row].name
+        cell.titleLabel.text = "🌟\(communitiesData[indexPath.row].name)"
         cell.descriptionLabel.sizeToFit()
         cell.descriptionLabel.layoutIfNeeded()
         return cell

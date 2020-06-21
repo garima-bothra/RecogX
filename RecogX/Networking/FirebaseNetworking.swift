@@ -91,6 +91,47 @@ deinit {
         }
     }
 
+    //MARK: - Function to get Skills
+       public func getSkills(completion: @escaping (Bool, [String] ) -> ()) {
+        let skillsRef = self.database.child("resumes").child(getUID())
+        skillsRef.observeSingleEvent(of: .value) { (snapshot) in
+            if snapshot.hasChild("skills") {
+                skillsRef.child("skills").observeSingleEvent(of: .childChanged) { (snapshot) in
+                        var skills = [String]()
+                         for child in snapshot.children {
+                            let snap = child as! DataSnapshot
+                            let skill = snap.value as! String
+                            skills.append(skill)
+                        }
+                        completion(true,skills)
+                }
+            } else {
+                skillsRef.observeSingleEvent(of: .childAdded) { (snapshotChild) in
+                    if snapshotChild.hasChild("skills"){
+                    skillsRef.child("skills").observeSingleEvent(of: .value) { (snapshot) in
+                        var skills = [String]()
+                         for child in snapshot.children {
+                            let snap = child as! DataSnapshot
+                            let skill = snap.value as! String
+                            skills.append(skill)
+                        }
+                        completion(true,skills)
+                }
+                    }
+            }
+        }
+        }
+//    skillsRef.observeSingleEvent(of: .value) { (snapshot) in
+//        var skills = [String]()
+//         for child in snapshot.children {
+//            let snap = child as! DataSnapshot
+//            let skill = snap.value as! String
+//            skills.append(skill)
+//        }
+//        completion(true,skills)
+//    }
+    }
+    
     //MARK: - Upload file to storage
     public func uploadFile(fileURL: URL, completion: @escaping (Bool) -> ()) {
     let riversRef = storageRef.child("resume/\(getUID()).pdf")
@@ -108,6 +149,7 @@ deinit {
         let resumesRef = self.database.child("resumes").child(getUID())
         resumesRef.child("link").setValue("\(riversRef)")
         resumesRef.child("uid").setValue(getUID())
+        resumesRef.child("skills").setValue([""])
         completion(true)
       // You can also access to download URL after upload.
       riversRef.downloadURL { (url, error) in
