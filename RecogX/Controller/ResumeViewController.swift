@@ -30,8 +30,9 @@ class ResumeViewController: UIViewController {
         getData()
         jobsTableView.delegate = self
         jobsTableView.dataSource = self
-        profileButton.imageView?.image?.withTintColor(#colorLiteral(red: 0.8470588235, green: 0.631372549, blue: 0.831372549, alpha: 1))
+        profileButton.tintColor = #colorLiteral(red: 0.8470588235, green: 0.631372549, blue: 0.831372549, alpha: 1)
         self.navigationController?.navigationBar.topItem?.title = "ANALYZE"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         resumeButton.layer.cornerRadius = 10
         skillsLabel.isHidden = true
         // Do any additional setup after loading the view.
@@ -79,6 +80,11 @@ extension ResumeViewController: UIDocumentPickerDelegate, UINavigationController
         print("\(urls)")
         firebaseNetworking.shared.uploadFile(fileURL: urls[0]) { completion in
             print("COMPLETION: \(completion)")
+            if completion == false {
+                self.skillsLabel.text = "An internal error occured"
+                self.skillsLabel.isHidden = false
+                return
+            }
             self.skillsLabel.text = "Processing..."
             self.skillsLabel.isHidden = false
             firebaseNetworking.shared.getSkills() { (completion, skills) in

@@ -109,7 +109,7 @@
                                     <action selector="resumeButtonPressed:" destination="cLQ-mj-zbZ" eventType="touchUpInside" id="VDJ-lO-m9Y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✨ Upload your resume and let us do the magic!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-Jf-RlL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✨ Upload your resume and let us do the magic!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-Jf-RlL">
                                 <rect key="frame" x="20" y="108" width="374" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -200,6 +200,8 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UeZ-Zb-vuh">
                                 <rect key="frame" x="374" y="11" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="person.crop.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="profileButtonPressed:" destination="cLQ-mj-zbZ" eventType="touchUpInside" id="ggE-uX-pxf"/>
@@ -305,7 +307,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qs4-uq-P2w">
                                 <rect key="frame" x="374" y="11" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="person.circle.fill" catalog="system"/>
+                                <state key="normal" image="person.crop.circle" catalog="system"/>
                                 <connections>
                                     <action selector="profileButtonPressed:" destination="jSE-OA-UQN" eventType="touchUpInside" id="hif-fl-q9S"/>
                                 </connections>
@@ -370,7 +372,6 @@
                     <connections>
                         <segue destination="e7V-XI-kCX" kind="relationship" relationship="viewControllers" id="kGm-z0-1is"/>
                         <segue destination="AMe-Ei-ia9" kind="relationship" relationship="viewControllers" id="n6n-dC-gpu"/>
-                        <segue destination="gcd-bY-3cB" kind="relationship" relationship="viewControllers" id="A13-hI-0Ju"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCX-us-9We" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -396,9 +397,11 @@
                                     <action selector="googleSignInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Md-Di-owK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj5-2i-dVf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recogX" translatesAutoresizingMaskIntoConstraints="NO" id="YeV-xJ-xGE">
+                                <rect key="frame" x="61.5" y="37" width="291" height="166"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Our Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj5-2i-dVf">
                                 <rect key="frame" x="62" y="198" width="174" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -409,9 +412,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recogX" translatesAutoresizingMaskIntoConstraints="NO" id="YeV-xJ-xGE">
-                                <rect key="frame" x="61.5" y="37" width="291" height="166"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -420,6 +420,7 @@
                             <constraint firstItem="2qc-w3-rzv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="21j-sJ-Of1"/>
                             <constraint firstItem="2qc-w3-rzv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.56" id="5Tf-nM-hIC"/>
                             <constraint firstItem="YeV-xJ-xGE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8f7-Mc-IAg"/>
+                            <constraint firstItem="8zf-ei-zAv" firstAttribute="top" secondItem="mj5-2i-dVf" secondAttribute="bottom" constant="8" id="FpU-OL-SSd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YeV-xJ-xGE" secondAttribute="trailing" constant="61.5" id="Hg5-zk-uSX"/>
                             <constraint firstItem="8zf-ei-zAv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61.5" id="MsD-NX-YPR"/>
                             <constraint firstItem="2qc-w3-rzv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0613839" id="U30-0s-VDf"/>
@@ -427,6 +428,8 @@
                             <constraint firstItem="YeV-xJ-xGE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.265" id="ndx-pX-VGl"/>
                             <constraint firstItem="YeV-xJ-xGE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61.5" id="oL8-df-tog"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8zf-ei-zAv" secondAttribute="trailing" constant="61.5" id="oxa-k0-pRW"/>
+                            <constraint firstItem="mj5-2i-dVf" firstAttribute="top" secondItem="YeV-xJ-xGE" secondAttribute="bottom" constant="-5" id="s3h-px-Trq"/>
+                            <constraint firstItem="mj5-2i-dVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="vix-uH-YTC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -478,11 +481,11 @@
             </objects>
             <point key="canvasLocation" x="3612" y="-584"/>
         </scene>
-        <!--Item 2-->
+        <!--Analyze-->
         <scene sceneID="nM7-4A-Mgt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AMe-Ei-ia9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="FWY-of-HsE"/>
+                    <tabBarItem key="tabBarItem" title="Analyze" image="doc.text.magnifyingglass" catalog="system" id="FWY-of-HsE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wNQ-xC-NtB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -610,8 +613,9 @@
         <segue reference="dpJ-eW-rgd"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="doc.text.magnifyingglass" catalog="system" width="116" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="recogX" width="166.5" height="166.5"/>
     </resources>

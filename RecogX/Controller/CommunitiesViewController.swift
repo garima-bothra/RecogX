@@ -13,11 +13,13 @@ class CommunitiesViewController: UIViewController {
     var communitiesData = [Community]()
     @IBOutlet weak var profileButton: UIButton!
     var linkForWeb = ""
+    var activityIndicator = UIActivityIndicatorView()
     @IBOutlet weak var communityTableView: UITableView!
     fileprivate func getData() {
         firebaseNetworking.shared.getCommunities() { completion, communities in
             self.communitiesData += communities
             self.communityTableView.reloadData()
+            self.activityIndicator.stopAnimating()
         }
     }
 
@@ -34,6 +36,8 @@ class CommunitiesViewController: UIViewController {
         super.viewDidLoad()
         communityTableView.delegate = self
         communityTableView.dataSource = self
+        activityIndicator.startAnimating()
+        self.view.addSubview(activityIndicator)
         getData()
         initialSetup()
         profileButton.tintColor = #colorLiteral(red: 0.8470588235, green: 0.631372549, blue: 0.831372549, alpha: 1)

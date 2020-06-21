@@ -142,15 +142,6 @@ deinit {
             }
         }
         }
-//    skillsRef.observeSingleEvent(of: .value) { (snapshot) in
-//        var skills = [String]()
-//         for child in snapshot.children {
-//            let snap = child as! DataSnapshot
-//            let skill = snap.value as! String
-//            skills.append(skill)
-//        }
-//        completion(true,skills)
-//    }
     }
     
     //MARK: - Upload file to storage
