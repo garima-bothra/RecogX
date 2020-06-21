@@ -36,6 +36,8 @@
 		86C414A6249F147700CC3EF1 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A5249F147700CC3EF1 /* WebsiteViewController.swift */; };
 		86C414A8249F1E8800CC3EF1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A7249F1E8800CC3EF1 /* ProfileViewController.swift */; };
 		86C414AA249F290300CC3EF1 /* firebaseSignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A9249F290300CC3EF1 /* firebaseSignOut.swift */; };
+		86C414B0249F6B8C00CC3EF1 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414AF249F6B8B00CC3EF1 /* JobTableViewCell.swift */; };
+		86C414B2249F714E00CC3EF1 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414B1249F714E00CC3EF1 /* Job.swift */; };
 		FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		86C414A5249F147700CC3EF1 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 		86C414A7249F1E8800CC3EF1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		86C414A9249F290300CC3EF1 /* firebaseSignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseSignOut.swift; sourceTree = "<group>"; };
+		86C414AF249F6B8B00CC3EF1 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		86C414B1249F714E00CC3EF1 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 			children = (
 				86C41461249DFE6400CC3EF1 /* Main.storyboard */,
 				86C414A3249F0E5F00CC3EF1 /* ExploreTableViewCell.swift */,
+				86C414AF249F6B8B00CC3EF1 /* JobTableViewCell.swift */,
 				86C41466249DFE6800CC3EF1 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -178,6 +183,7 @@
 			children = (
 				86C4148F249E3B7B00CC3EF1 /* User.swift */,
 				86C414A1249EC6A500CC3EF1 /* Community.swift */,
+				86C414B1249F714E00CC3EF1 /* Job.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				86C41499249E47A600CC3EF1 /* User+Kommunication.swift in Sources */,
 				86C41460249DFE6400CC3EF1 /* ViewController.swift in Sources */,
 				86C414AA249F290300CC3EF1 /* firebaseSignOut.swift in Sources */,
+				86C414B0249F6B8C00CC3EF1 /* JobTableViewCell.swift in Sources */,
 				86C414A8249F1E8800CC3EF1 /* ProfileViewController.swift in Sources */,
 				86C414A0249EA81200CC3EF1 /* CommunitiesViewController.swift in Sources */,
 				86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */,
@@ -379,6 +386,7 @@
 				86C41497249E461600CC3EF1 /* KommunicateNetworking.swift in Sources */,
 				86C41492249E3BE800CC3EF1 /* FirebaseNetworking.swift in Sources */,
 				86C4147E249E01D700CC3EF1 /* Keyboard+hide.swift in Sources */,
+				86C414B2249F714E00CC3EF1 /* Job.swift in Sources */,
 				86C4147A249E013E00CC3EF1 /* Reachability.swift in Sources */,
 				86C4148A249E1AEA00CC3EF1 /* AppDelegate+instantiate.swift in Sources */,
 				86C41481249E024100CC3EF1 /* debugger.swift in Sources */,

@@ -91,6 +91,26 @@ deinit {
         }
     }
 
+    //MARK: - Function to get Job details
+       public func getJobs(completion: @escaping (Bool, [Job] ) -> ()) {
+           let jobsRef = self.database.child("jobs")
+           var jobsArr = [Job]()
+        var job = Job(company: "", link: "", position: "", skills: "")
+           jobsRef.observeSingleEvent(of: .value) { (snapshot) in
+               for child in snapshot.children {
+                   job = Job(company: "", link: "", position: "", skills: "")
+                   let snap = child as! DataSnapshot
+                   let communityDict = snap.value as! [String: String]
+                job.company = communityDict["company"]!
+                job.link = communityDict["link"]!
+                job.position = communityDict["position"]!
+                job.skills = communityDict["skills"]!
+                jobsArr.append(job)
+               }
+               completion(true, jobsArr)
+           }
+       }
+
     //MARK: - Function to get Skills
        public func getSkills(completion: @escaping (Bool, [String] ) -> ()) {
         let skillsRef = self.database.child("resumes").child(getUID())
@@ -103,6 +123,7 @@ deinit {
                             let skill = snap.value as! String
                             skills.append(skill)
                         }
+                    print("SKILSS IN FUNC: \(skills)")
                         completion(true,skills)
                 }
             } else {

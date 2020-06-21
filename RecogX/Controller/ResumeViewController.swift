@@ -11,16 +11,35 @@ import MobileCoreServices
 
 class ResumeViewController: UIViewController {
 
+    var jobsArr = [Job]()
+    var link = String()
     @IBOutlet weak var resumeButton: UIButton!
     @IBOutlet weak var skillsLabel: UILabel!
     @IBOutlet weak var profileButton: UIButton!
+
+    @IBOutlet weak var jobsTableView: UITableView!
+    fileprivate func getData() {
+        firebaseNetworking.shared.getJobs() { completion, jobs in
+            self.jobsArr = jobs
+            self.jobsTableView.reloadData()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        getData()
+        jobsTableView.delegate = self
+        jobsTableView.dataSource = self
         profileButton.imageView?.image?.withTintColor(#colorLiteral(red: 0.8470588235, green: 0.631372549, blue: 0.831372549, alpha: 1))
         self.navigationController?.navigationBar.topItem?.title = "ANALYZE"
         resumeButton.layer.cornerRadius = 10
         skillsLabel.isHidden = true
         // Do any additional setup after loading the view.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        getData()
     }
     @IBAction func resumeButtonPressed(_ sender: Any) {
         attachDocument()
@@ -44,6 +63,13 @@ class ResumeViewController: UIViewController {
         importMenu.modalPresentationStyle = .formSheet
 
         present(importMenu, animated: true)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "website" {
+            let dest = segue.destination as! WebsiteViewController
+            dest.link = self.link
+        }
     }
 
 }
@@ -71,5 +97,26 @@ extension ResumeViewController: UIDocumentPickerDelegate, UINavigationController
 
      func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
         controller.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension ResumeViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return jobsArr.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: JobTableViewCell = self.jobsTableView.dequeueReusableCell(withIdentifier: "job") as! JobTableViewCell
+        cell.accessoryType = .disclosureIndicator
+        cell.companyLabel.text = jobsArr[indexPath.row].company.trimmingCharacters(in: CharacterSet.whitespaces)
+        cell.positionLabel.text = jobsArr[indexPath.row].position
+        cell.skillsLabel.text = "Skills: " + jobsArr[indexPath.row].skills
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        link = jobsArr[indexPath.row].link
+        performSegue(withIdentifier: "website", sender: Any.self)
     }
 }
