@@ -56,6 +56,22 @@ deinit {
                }
            }
        }
+
+    //MARK: - Function to get User details
+    public func getUser(completion: @escaping (Bool, User ) -> ()) {
+        let userRef = self.database.child("users").child(getUID())
+        var user = User(name: "", mail: "", phone: "")
+        var community = Community(name: "", link: "", bio: "")
+        userRef.observeSingleEvent(of: .value) { (snapshot) in
+            let userDict = snapshot.value as! [String: String]
+            user.gender = userDict["gender"]
+            user.mail = getEmail()
+            user.name = userDict["name"] ?? "Garima"
+            user.phone = userDict["phone"] ?? "7788996689"
+            completion(true, user)
+        }
+    }
+
     //MARK: - Function to get Community details
     public func getCommunities(completion: @escaping (Bool, [Community] ) -> ()) {
         let communityRef = self.database.child("communities")

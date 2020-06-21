@@ -11,6 +11,7 @@ import UIKit
 class CommunitiesViewController: UIViewController {
 
     var communitiesData = [Community]()
+    @IBOutlet weak var profileButton: UIButton!
     var linkForWeb = ""
     @IBOutlet weak var communityTableView: UITableView!
     fileprivate func getData() {
@@ -35,11 +36,18 @@ class CommunitiesViewController: UIViewController {
         communityTableView.dataSource = self
         getData()
         initialSetup()
+        profileButton.tintColor = #colorLiteral(red: 0.8470588235, green: 0.631372549, blue: 0.831372549, alpha: 1)
         // Do any additional setup after loading the view.
     }
 
     override func viewDidAppear(_ animated: Bool) {
         initialSetup()
+    }
+
+    @IBAction func profileButtonPressed(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let profileView: ProfileViewController = mainStoryboard.instantiateViewController(withIdentifier: "profile") as! ProfileViewController
+        self.navigationController?.pushViewController(profileView, animated: true)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

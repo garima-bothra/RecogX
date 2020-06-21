@@ -34,6 +34,8 @@
 		86C414A2249EC6A500CC3EF1 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A1249EC6A500CC3EF1 /* Community.swift */; };
 		86C414A4249F0E5F00CC3EF1 /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A3249F0E5F00CC3EF1 /* ExploreTableViewCell.swift */; };
 		86C414A6249F147700CC3EF1 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A5249F147700CC3EF1 /* WebsiteViewController.swift */; };
+		86C414A8249F1E8800CC3EF1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A7249F1E8800CC3EF1 /* ProfileViewController.swift */; };
+		86C414AA249F290300CC3EF1 /* firebaseSignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C414A9249F290300CC3EF1 /* firebaseSignOut.swift */; };
 		FE5F4951DE791A523E6CB1D1 /* Pods_RecogX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9BB1A2C42E5F30A5FF1B2A /* Pods_RecogX.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		86C414A1249EC6A500CC3EF1 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		86C414A3249F0E5F00CC3EF1 /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
 		86C414A5249F147700CC3EF1 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
+		86C414A7249F1E8800CC3EF1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		86C414A9249F290300CC3EF1 /* firebaseSignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseSignOut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 				86C41487249E1A0500CC3EF1 /* UserFormViewController.swift */,
 				86C4148B249E2AB600CC3EF1 /* FAQBotViewController.swift */,
 				86C414A5249F147700CC3EF1 /* WebsiteViewController.swift */,
+				86C414A7249F1E8800CC3EF1 /* ProfileViewController.swift */,
 				86C4149D249E88D700CC3EF1 /* ResumeViewController.swift */,
 				86C4149F249EA81200CC3EF1 /* CommunitiesViewController.swift */,
 			);
@@ -214,6 +219,7 @@
 				86C41491249E3BE800CC3EF1 /* FirebaseNetworking.swift */,
 				86C41496249E461600CC3EF1 /* KommunicateNetworking.swift */,
 				86C41485249E033F00CC3EF1 /* AppDelegate+GSignIn.swift */,
+				86C414A9249F290300CC3EF1 /* firebaseSignOut.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -358,6 +364,8 @@
 				86C4149E249E88D700CC3EF1 /* ResumeViewController.swift in Sources */,
 				86C41499249E47A600CC3EF1 /* User+Kommunication.swift in Sources */,
 				86C41460249DFE6400CC3EF1 /* ViewController.swift in Sources */,
+				86C414AA249F290300CC3EF1 /* firebaseSignOut.swift in Sources */,
+				86C414A8249F1E8800CC3EF1 /* ProfileViewController.swift in Sources */,
 				86C414A0249EA81200CC3EF1 /* CommunitiesViewController.swift in Sources */,
 				86C41486249E033F00CC3EF1 /* AppDelegate+GSignIn.swift in Sources */,
 				86C414A6249F147700CC3EF1 /* WebsiteViewController.swift in Sources */,
