@@ -30,6 +30,14 @@ We wish to take this to the next level. Approach women-led companies and underre
 ### Website live at : https://recogx.tech/
 
 ## Source Codes:
-### Front-End : https://github.com/smarter23/recogX
-### Back-End : https://github.com/eeshashetty/RecogX-Backend
-### iOS : https://github.com/garima94921/RecogX
+#### [Front-End](https://github.com/smarter23/recogX)
+#### [Back-End](https://github.com/eeshashetty/RecogX-Backend)
+#### [iOS](https://github.com/garima94921/RecogX) (You're here)
+
+## License
+To know more about license check [LICENSE](https://github.com/garima94921/RecogX/blob/master/LICENSE)
+
+## Credits
+- [Ananya Ganesh](https://github.com/smarter23)
+- [Eesha Shetty](https://github.com/eeshashetty)
+- [Iishi Patel](https://github.com/iishipatel)
